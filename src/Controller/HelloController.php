@@ -15,6 +15,7 @@ class HelloController
         return new Response("Hello, world!");
     }
 
+
     #[Route('/dinossauro')]
     public function dinoRex(): Response
     {
@@ -25,6 +26,12 @@ class HelloController
     public function teste(): Response
     {
         return new Response("Testando Novamente!");
+    }
+
+    #[Route('/mamiferos')]
+    public function mamiferos(): Response
+    {
+        return new Response("Olá, mamiferos!");
     }
 
 }
